@@ -26,9 +26,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var grade: TextView
 
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -89,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                 for(a in numbers){
                     sum+=a
                 }
-                hwMean = sum/numbers.size
+                hwMean = sum/5 //assuming that 5 homeworks will be given, divide by numbers.size if the number of assigned homeworks is not specified
             }
 
 
